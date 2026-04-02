@@ -50,61 +50,90 @@ body {
     color: orange;
 }
 
-/* HERO */
+<header class="hero">
+
+    <!-- BACKGROUND SLIDER -->
+    <div class="hero-slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
+</header>
+
+/* HERO BASE */
 .hero {
     height: 80vh;
     position: relative;
-    background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994') no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
     padding: 0 20px;
+    overflow: hidden;
 }
 
+/* SLIDER */
+.hero-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeSlider 15s infinite;
+}
+
+/* REAL IMAGES */
+.slide:nth-child(1) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmnkGayucuVfYGcTaJGLQ_oduGG_WrEwExQ&s);
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk8hhtD0JSmHFOEYxYrXX7KHrmtD74gHp-Hg&s');
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrJ2N4snxGDdi15nCpBivVGL8u43FUv1IYJQ&s');
+    animation-delay: 10s;
+}
+
+/* FADE EFFECT */
+@keyframes fadeSlider {
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    30%  { opacity: 1; }
+    35%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* OVERLAY */
 .hero::before {
     content: '';
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0,0,50,0.5); /* overlay gradient */
+    background: rgba(0,0,50,0.5);
     z-index: 1;
 }
 
+/* CONTENT */
 .hero-content {
     position: relative;
     z-index: 2;
-    animation: fadeInDown 1s ease forwards;
 }
-
-.hero h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 15px 0 25px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: orange;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-    animation: pulse 2s infinite;
-}
-
-.btn:hover {
-    background-color: darkorange;
-    transform: translateY(-2px);
-}
-
 /* SECTIONS */
 .section {
     padding: 50px 20px;
