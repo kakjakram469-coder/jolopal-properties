@@ -33,9 +33,7 @@ img {
   display: block;
 }
 
-i, svg {
-  font-size: 1.5rem;
-}
+i, svg {font-size: 1.5rem;}
 
 /* =========================
    FLEX + GRID SYSTEM
@@ -56,53 +54,31 @@ i, svg {
    TABLET (iPads, small laptops)
 ========================= */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
+  body {font-size: 16px;}
 
-  .container {
-    width: 95%;
-  }
+  .container { width: 95%;}
 
-  i, svg {
-    font-size: 1.2rem;
-  }
+  i, svg {font-size: 1.2rem;}
 }
 
 /* =========================
    MOBILE (phones)
 ========================= */
 @media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  .container {
+  body {font-size: 14px;}
+ 
+ .container {
     width: 100%;
-    padding: 10px;
-  }
+    padding: 10px; }
 
-  h1 {
-    font-size: 1.8rem;
-  }
+  h1 {font-size: 1.8rem; }
+  h2 {font-size: 1.4rem;}
 
-  h2 {
-    font-size: 1.4rem;
-  }
+  p {font-size: 1rem;}
 
-  p {
-    font-size: 1rem;
-  }
+  .flex {flex-direction: column;}
 
-  .flex {
-    flex-direction: column;
-  }
+  i, svg { font-size: 1rem;}
 
-  i, svg {
-    font-size: 1rem;
-  }
+  button {width: 100%;}}
 
-  button {
-    width: 100%;
-  }
-}

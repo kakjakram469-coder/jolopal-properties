@@ -96,6 +96,7 @@ window.onload = function () {
     </div>
 
 
+
 </section>
 
 <style>
@@ -160,32 +161,35 @@ window.onload = function () {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;}
+    bottom: 0;
+}
 
-/* EACH IMAGE */
+/* EACH SLIDE */
 .slide {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-size: cover;   /* KEY FIX */
+    background-position: center top ;
+    background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
-.slide {opacity: 1 !important;}
+    transition: opacity 3s ease-in-out;
 }
 
-/* ACTIVE IMAGE */
-.slide.active { opacity: 1;}
+/* ACTIVE SLIDE */
+.slide.active {
+    opacity: 1;
+}
 
-/* DARK OVERLAY FOR READABILITY */
+/* DARK OVERLAY */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.55);}
-
+    background: rgba(0,0,0,0.55);
+}
 /* TEXT CONTENT */  
 
 .hero-content {
