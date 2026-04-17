@@ -21,17 +21,26 @@
 
     .brand img {
         height: 45px;
-        width: auto;}
+        width: auto;
+ background: white;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-    .brand-text h1 {
+
+   .brand-text h1 {
         margin: 0;
         font-size: 18px;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+           color: #111; }
 
     .brand-text p {
         margin: 0;
         font-size: 12px;
         color: #111;}
+   .brand:hover {opacity: 0.8;
+}
 
     /* RIGHT NAVIGATION */
     .nav-links {
@@ -120,16 +129,18 @@
 }
 
 /* BUTTON */
-button {
+.button {
   padding: 10px 15px;
   border: none;
   background: #1f2937;
   color: white;
   border-radius: 6px;
   cursor: pointer;
+   display: inline-block;
+   text-decoration: none;
 }
 
-button:hover {
+.button:hover {
   background: #1a5edb;
 }
 
