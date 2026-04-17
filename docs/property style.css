@@ -31,7 +31,7 @@
     .brand-text p {
         margin: 0;
         font-size: 12px;
-        color: gray;}
+        color: #111;}
 
     /* RIGHT NAVIGATION */
     .nav-links {
@@ -52,7 +52,7 @@
 /* HERO */
 .hero {
   height: 50vh;
-  background: #1f2937;
+  background: #146;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@
 
 /* CARD */
 .card {
-  background: orange;
+  background: #146;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -114,7 +114,7 @@
 }
 
 .type {
-  color: #666;
+  color:lightcoral;
   font-size: 14px;
   margin-bottom: 15px;
 }
