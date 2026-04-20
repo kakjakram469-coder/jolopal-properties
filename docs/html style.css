@@ -60,7 +60,7 @@ font-family: Arial, sans-serif; }
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: row;
+    flex-direction: column;
     padding: 15px 20px; 
      align-items: center;
 }
