@@ -72,6 +72,7 @@ font-family: Arial, sans-serif; }
     width: 100%;
     margin-top: 10px;
   margin-left:0
+ display: flex;
 }
  .brand {
     flex: 1; /* gives logo priority space */
