@@ -9,7 +9,8 @@ font-family: Arial, sans-serif; }
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
-        background: transparent; 
+        background: transparent;
+ 
          }
 
    /* LEFT BRAND SECTION */
@@ -59,7 +60,7 @@ font-family: Arial, sans-serif; }
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     padding: 15px 20px; 
      align-items: center;
 }
