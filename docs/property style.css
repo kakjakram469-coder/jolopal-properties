@@ -5,14 +5,15 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
-/* NAVBAR */
-  .navbar {
+    .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 40px;
-        background: transparent; }
+        padding: 15px 20px;
+        background: transparent;
+ 
+         }
+
    /* LEFT BRAND SECTION */
     .brand {
         display: flex;
@@ -22,14 +23,13 @@
     .brand img {
         height: 45px;
         width: auto;
- background: white;
+  background: white;
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-
-   .brand-text h1 {
+    .brand-text h1 {
         margin: 0;
         font-size: 18px;
         letter-spacing: 1px;
@@ -57,10 +57,12 @@
         transition: 0.3s; }
 
     .nav-links a:hover {background-color: black; color: white;}
+
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+ flex-wrap: wrap;
     padding: 15px 20px; 
      align-items: center;
 }
@@ -71,12 +73,15 @@
     width: 100%;
     margin-top: 10px;
   margin-left:0
-display: flex;
+ display: flex;
 }
+ .brand {
+    flex: 1; /* gives logo priority space */
+  }
 
   .nav-links a {
     width: 100%;
-    text-align: center;}}
+    text-align: left;}}
 /* ========================= */
 /* MOBILE CONTROLS ONLY */
 /* ========================= */
@@ -133,8 +138,6 @@ display: flex;
         flex: 1;
     }
 }
-
-
 
 /* HERO */
 .hero {
