@@ -81,6 +81,62 @@ font-family: Arial, sans-serif; }
   .nav-links a {
     width: 100%;
     text-align: left;}}
+/* ========================= */
+/* MOBILE CONTROLS ONLY */
+/* ========================= */
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* hide toggle checkbox completely */
+#nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* show hamburger ONLY on mobile */
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    /* keep navbar stable (no restructuring of desktop behavior) */
+    .navbar {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* hide nav links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    /* activate menu when checkbox is checked */
+    #nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    /* ensure brand stays visible and stable */
+    .brand {
+        flex: 1;
+    }
+}
 
 .hero {
     height: 80vh;
