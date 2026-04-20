@@ -29,6 +29,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
     .brand-text h1 {
         margin: 0;
         font-size: 18px;
@@ -137,6 +138,14 @@
     .brand {
         flex: 1;
     }
+}
+.brand,
+.brand:link,
+.brand:visited,
+.brand:hover,
+.brand:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* HERO */
